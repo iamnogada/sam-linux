@@ -1,0 +1,24 @@
+VSCode Version: 1.23.1
+OS Version: High Sierra 10.13.4
+Steps to Reproduce:
+
+Create simple java and configure the launch.json
+{
+"type": "java",
+"name": "Debug (Launch)-Main",
+"request": "launch",
+"cwd": "${workspaceFolder}",
+"console": "internalConsole",
+"stopOnEntry": false,
+"mainClass": "Main",
+"args": ""
+},
+run task
+create multi-root-workspace
+add the directory(step1.)
+run task
+error come out "java.lang.ClassNotFoundException: ...."
+it needs java extension pack.
+I use vscjava-vscode-pack
+
+Does this issue occur when all extensions are disabled?: Yes/No
